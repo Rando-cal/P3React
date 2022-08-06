@@ -2,6 +2,7 @@ import apiUrl from '../apiConfig'
 import axios from 'axios'
 
 // PASSING values to BACKEND AS: song ID should be 'req.body.songIdToAdd'
+// if NO song passed, check MBID for value...
 // !check AUTH token
 export const addSongToCart = (songIdToAdd,user) => {
 	console.log('&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&');

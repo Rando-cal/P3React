@@ -62,14 +62,18 @@ const App = () => {
                 <SignOut msgAlert={msgAlert} clearUser={clearUser} user={user} />
               </RequireAuth>
             }
-          />
-          <Route
-            path='/change-password'
-            element={
-              <RequireAuth user={user}>
+            />
+            <Route
+            	path='/change-password'
+            	element={
+              	<RequireAuth user={user}>
                 <ChangePassword msgAlert={msgAlert} user={user} />
-              </RequireAuth>}
-          />
+              	</RequireAuth>}
+            />
+
+
+
+
 
 				</Routes>
 				{msgAlerts.map((msgAlert) => (
