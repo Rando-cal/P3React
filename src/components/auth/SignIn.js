@@ -7,6 +7,14 @@ import messages from '../shared/AutoDismissAlert/messages'
 import Form from 'react-bootstrap/Form'
 import Button from 'react-bootstrap/Button'
 
+
+// *********************************************
+//!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+// HAVE to hit the create route POST /carts when the user logs
+// in to make a new cart for them
+
+//!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+
 const SignIn = (props) => {
 	// constructor(props) {
 	// 	super(props)
