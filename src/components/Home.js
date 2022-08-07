@@ -3,6 +3,7 @@ import { Route, Routes } from 'react-router-dom'
 import { Fragment } from 'react'
 
 const Home = (props) => {
+	console.log('IN Home @ Home.js');
 	const { msgAlert, user } = props
 
 

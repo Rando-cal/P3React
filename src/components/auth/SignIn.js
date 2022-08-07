@@ -1,6 +1,7 @@
 import React, { useState } from 'react'
 import { useNavigate } from 'react-router-dom'
 
+
 import { signIn } from '../../api/auth'
 import messages from '../shared/AutoDismissAlert/messages'
 
@@ -50,6 +51,7 @@ const SignIn = (props) => {
 					variant: 'success',
 				})
 			)
+
 			.then(() => navigate('/'))
 			.catch((error) => {
                 setEmail('')

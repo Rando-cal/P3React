@@ -1,4 +1,3 @@
-
 import React, { useState, Fragment } from 'react'
 import { Link } from 'react-router-dom'
 
@@ -14,6 +13,7 @@ import { Container, Card, Button } from 'react-bootstrap'
 
 
 const SongSearch = (props) => {
+    console.log('IN SongSearch @ SongSearch.js');
 
     const { msgAlert, user } = props
 
@@ -43,7 +43,7 @@ const SongSearch = (props) => {
         addSongToCart(mbid.mbid,user)
      }
 
-    console.log('returnedSongList;@@@@@@@@',returnedSongList)
+    // console.log('returnedSongList;@@@@@@@@',returnedSongList)
     // const imageString = "aSong.image[2]." + String.fromCharCode(35) + "text"
 
     // grabs user Search input and sends it to backend
@@ -54,9 +54,9 @@ const SongSearch = (props) => {
             <Card.Header><strong>{ aSong.name }</strong></Card.Header>
                 <Card.Body>
                     <Card.Text>
-                        <h6>{ aSong.artist }</h6> 
+                        <div>{ aSong.artist }</div> 
                         <img src={ aSong.image[2]} />
-                        {/* <h4>{ aSong.mbid }</h4> */}
+                        <div>{ aSong.mbid }</div>
                         <Form onSubmit={(e) => {addToCartHandler(e,aSong,user)}} className="d-flex">
                             <Button variant="primary" type = "submit" >
                                 Add to Cart        
